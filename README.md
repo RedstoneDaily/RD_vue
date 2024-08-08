@@ -1,46 +1,43 @@
-# redstone_daily
+# 红石日报
 
-This template should help get you started developing with Vue 3 in Vite.
+这个模板应该有助于你开始在 Vite 中使用 Vue 3 进行开发。 ##推荐的 IDE 设置
+[VSCode](https://code.visualstudio.com/)+[Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)（并禁用 Vetur）。
 
-## Recommended IDE Setup
+## 自定义配置
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+请参阅[Vite 配置参考](https://vitejs.dev/config/). 
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
+## 项目设置
 
 ```sh
-pnpm install
+pnpm i
 ```
 
-### Compile and Hot-Reload for Development
+### 编译和热重载开发
 
 ```sh
 pnpm dev
 ```
 
-### Compile and Minify for Production
+### 编译和缩小生产规模
 
 ```sh
 pnpm build
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+### 使用[ESLint](https://eslint.org/)
 
 ```sh
 pnpm lint
 ```
 
-# 项目代码都放在src目录下
+# 项目代码都放在 src 目录下
 
-- App.vue是根组件
-- views是放页面的地方
-- components是组件
-  - 其中tool是放一些通用工具组件的地方，比如说：按钮、链接、表单等
-  - 其他文件夹是页面的组件，对应着views文件夹下的页面
+- App.vue 是根组件
+- views 是放页面的地方
+- components 是组件
+  - 其中 tool 是放一些通用工具组件的地方，比如说：按钮、链接、表单等
+  - 其他文件夹是页面的组件，对应着 views 文件夹下的页面
 
 ## 用了以下依賴：
 
