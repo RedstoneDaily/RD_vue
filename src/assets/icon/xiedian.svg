@@ -1,0 +1,18 @@
+<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.09033 20V4H20.0903V20H4.09033Z" stroke="white"/>
+<path d="M4.09033 8V4H6.09033V8H4.09033Z" fill="white" fill-opacity="0.5" stroke="white"/>
+<path d="M18.0903 8V4H20.0903V8H18.0903Z" fill="white" fill-opacity="0.5" stroke="white"/>
+<path d="M11.0903 8V4H13.0903V8H11.0903Z" fill="white" fill-opacity="0.5" stroke="white"/>
+<mask id="mask0_212_480" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="3" y="7" width="18" height="14">
+<path d="M3.59033 7.5H20.5903V20.5H3.59033V7.5Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_212_480)">
+<path d="M4.09033 8H20.0903V20H4.09033V8Z" stroke="white"/>
+<line x1="15.9577" y1="7.33914" x2="3.95773" y2="20.3391" stroke="white"/>
+<line x1="11.9577" y1="7.33914" x2="-0.0422657" y2="20.3391" stroke="white"/>
+<line x1="7.95773" y1="7.33914" x2="-4.04227" y2="20.3391" stroke="white"/>
+<line x1="19.9577" y1="7.33914" x2="7.95773" y2="20.3391" stroke="white"/>
+<line x1="23.9577" y1="7.33914" x2="11.9577" y2="20.3391" stroke="white"/>
+<line x1="27.9577" y1="7.33914" x2="15.9577" y2="20.3391" stroke="white"/>
+</g>
+</svg>

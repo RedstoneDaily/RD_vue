@@ -3,12 +3,14 @@ import HomeView from "../views/HomeView.vue";
 import RSSearchView from "../views/RSSearchView.vue";
 import NotFoundView from "../views/NotFoundView.vue";
 import AcaciaMCView from "../views/AcaciaMCView.vue";
+import ContentPage from "@/views/ContentPage.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     { path: "/", name: "home", component: HomeView },
     { path: "/index.html", redirect: "/" },
+    { path: "/content", name: "content", component: ContentPage },
     // {
     //   path: '/about',
     //   name: 'about',
@@ -23,8 +25,8 @@ const router = createRouter({
     //   component: () => import('../views/HomePage.vue')
     // },
     { path: "/rs_search", name: "rs_search", component: RSSearchView },
-	{ path: "/acacia_mc", name: "acacia_mc", component: AcaciaMCView },
-	{ path: '/:catchAll(.*)*', name: 'not_found', component: NotFoundView }
+    { path: "/acacia_mc", name: "acacia_mc", component: AcaciaMCView },
+    { path: "/:catchAll(.*)*", name: "not_found", component: NotFoundView },
   ],
 });
 

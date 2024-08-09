@@ -7,11 +7,14 @@ import ToolButton from "../tool/ButtonUnderlined.vue";
     <nav>
       /
       <ToolButton name="红石图寻" dst="/rs_search" /> /
-      <ToolButton name="Acacia编译器" dst="/acacia_mc" /> / <ToolButton /> /
+      <ToolButton name="Acacia编译器" dst="/acacia_mc" /> /
+      <ToolButton name="内容页！" dst="/content" /> /
     </nav>
     <nav>
       /
-      <ToolButton /> / <ToolButton /> / <ToolButton /> /
+      <ToolButton /> /
+      <ToolButton /> /
+      <ToolButton /> /
     </nav>
   </div>
 </template>
