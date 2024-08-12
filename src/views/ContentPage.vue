@@ -15,6 +15,6 @@ import ContentList from './ContentPage/ContentList.vue';
 .content-page {
     width: 100%;
     min-height: 100vh;
-    background-color: #d9d9d9;
+    background-color: var(--RD-color-bg);
 }
 </style>

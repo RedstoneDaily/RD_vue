@@ -21,51 +21,37 @@ body{
 /* 全局颜色变量 */
 :root {
   /* 黑色 */
-  --RD-color-black: #000000;
-  --RD-color-black-50: #00000080;
+  --RD-color-black: #16161B;
+  --RD-color-black-50: #16161B80;
   /* 白色 */
-  --RD-color-white: #FFFFFF;
-  --RD-color-white-50: #FFFFFF80;
+  --RD-color-white: #E6EBE6;
+  --RD-color-white-50: #E6EBE680;
   /* 灰色 */
   --RD-color-gray: #D9D9D9;
   --RD-color-gray-50: #D9D9D980;
   /* 红色 */
-  --RD-color-red: #BA0000;
-  --RD-color-red-50: #BA000080;
+  --RD-color-red: #A81111;
+  --RD-color-red-50: #A8111180;
   /* 深红 */
-  --RD-color-crimson: #740000;
+  --RD-color-crimson: #540808;
 }
 
-/* 全局文字颜色变量 */
+/* 全局样式颜色变量 */
 :root {
   --RD-color-text: var(--RD-color-black);
   --RD-color-text-white: var(--RD-color-white);
   --RD-color-text-red: var(--RD-color-crimson);
+
+  --RD-color-bg: var(--RD-color-white);
 }
 
-/* a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
-}
-
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
-
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
-} */
+/* 暗夜模式 */
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --RD-color-text: var(--RD-color-white);
+    --RD-color-text-white: var(--RD-color-black);
+    --RD-color-text-red: var(--RD-color-crimson);
+      
+      --RD-color-bg: var(--RD-color-black);
+    }
+  } */

@@ -84,7 +84,7 @@ img {
 .news-header .news-title {
     /* 文字 */
     padding: 0 10px;
-    color: var(--RD-color-text-white);
+    color: var(--RD-color-white);
     position: absolute;
     right: 0;
     bottom: 4px;
@@ -99,7 +99,7 @@ img {
 .rank-first {
     width: 80px;
     height: 80px;
-    color: var(--RD-color-text-white);
+    color: var(--RD-color-white);
     background-color: var(--RD-color-red-50);
     clip-path: polygon(0 0, 100% 100%, 0 100%);
 
@@ -167,7 +167,7 @@ img {
 
 .title {
     font-size: 30px;
-    color: var(--RD-color-text-white);
+    color: var(--RD-color-white);
     position: absolute;
     top: 0px;
     left: 60px;

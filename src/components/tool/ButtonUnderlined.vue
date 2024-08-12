@@ -31,7 +31,6 @@ const navigate = () => {
 .tool-button {
   display: inline-block;
   padding: 10px 40px;
-  color: #fff;
   text-align: center;
   cursor: pointer;
   position: relative;
@@ -64,9 +63,5 @@ const navigate = () => {
 .tool-button:hover::before {
   width: 100%;
   left: 0;
-}
-
-.tool-button button:hover {
-  color: #ccc; /* 悬停时按钮文本颜色变化 */
 }
 </style>

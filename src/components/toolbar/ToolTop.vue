@@ -26,5 +26,6 @@ import ToolButton from "../tool/ButtonUnderlined.vue";
   justify-content: space-between;
   gap: 1rem;
   padding: 20px 40px;
+  color: var(--RD-color-text-white);
 }
 </style>

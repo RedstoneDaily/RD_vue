@@ -36,6 +36,7 @@
 
 <style scoped>
 .ContentItem {
+        box-shadow: 0 2px 6px 1px #00000020;
     flex: 1 0 500px;
     height: 120px;
     /* background-color: aqua; */
@@ -101,7 +102,7 @@
     width: calc(100% - 20px);
     height: 100%;
     clip-path: polygon(40px 0, 100% 0, 100% 100%, 0 100%);
-    background-color: var(--RD-color-white);
+    background-color: var(--RD-color-bg);
 
     position: absolute;
     right: 0;
@@ -133,7 +134,7 @@
 .title {
     line-height: var(--text-height);
     font-size: 26px;
-    color: var(--RD-color-text-black);
+    color: var(--RD-color-text);
     position: absolute;
     top: 0px;
     left: 60px;
@@ -141,7 +142,7 @@
 
 .synopsis {
     font-size: 15px;
-    color: var(--RD-color-black);
+    color: var(--RD-color-text);
     position: absolute;
     top: calc(var(--text-height) + 10px);
     left: 50px;

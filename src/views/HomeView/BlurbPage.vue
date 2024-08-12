@@ -100,6 +100,10 @@ watch(pagesNum, (newVal) => {
 </template>
 
 <style scoped>
+h1, p {
+  margin: 0;
+  font-weight: normal;
+}
 .main {
   position: absolute;
   width: 100vw;

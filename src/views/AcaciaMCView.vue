@@ -44,6 +44,8 @@ import ToolTop from "@/components/toolbar/ToolTop.vue";
   width: 100%;
   height: 100%;
   overflow-y: scroll;
+  background-image: url(/src/assets/background/Fparrot_CPU2.png);
+  background-size: 100%;
 }
 
 #container {

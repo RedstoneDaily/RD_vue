@@ -5,28 +5,31 @@ import BlurbPage from './HomeView/BlurbPage.vue'
 
 // 捕获鼠标上下滚动事件
 const pages = ref(0)
-// window.addEventListener('mousewheel', function (e) {
-//     e.preventDefault();
-//     const delta = e.wheelDelta || -e.detail;
-//     if (delta > 0) {
-//         // 向上滚动
-//         pages += 1;
-//         console.log('向上滚动');
-//     } else if (delta < 0) {
-//         // 向下滚动
-//         pages -= 1;
-//         console.log('向下滚动');
-//     }
-// }, false);
+const totalPages = 5
+let isThrottled = false
 
-const totalPages = 5;
+window.addEventListener('mousewheel', function (e) {
+  e.preventDefault();
+  if (isThrottled) return;
 
+  isThrottled = true;
+  const delta = e.wheelDelta || -e.detail;
+
+  if (delta > 0) {
+    // 向上滚动
+    pages.value = pages.value === 0 ? totalPages - 1 : (pages.value - 1) % totalPages;
+  } else if (delta < 0) {
+    // 向下滚动
+    pages.value = (pages.value + 1) % totalPages;
+  }
+
+  setTimeout(() => {
+    isThrottled = false;
+  }, 500); // 0.5秒的延迟
+}, false);
 </script>
 
 <template>
-  <button style="position: relative; z-index: 999" @click="pages = (pages + 1) % totalPages">
-    点击{{ pages }}
-  </button>
   <!-- <button style="position: relative;z-index: 999;" @click="pages = pages == 0 ? 5 : pages-1">点击{{ pages }}</button> -->
   <TitlePage class="page" :pages-num="pages" />
   <BlurbPage class="page" :pages-num="pages" />
