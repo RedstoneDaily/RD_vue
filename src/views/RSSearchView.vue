@@ -18,11 +18,13 @@ import ToolTop from "@/components/toolbar/ToolTop.vue";
 
 const { API_URL: api_base_str = "/api/" } = inject("globalConfig");
 
+// API URLs
 const api_base = new URL("redstonesearch/", api_base_str);
 const api_new_quiz = new URL("newquiz", api_base);
 const api_quiz_img = new URL("quizimg", api_base);
 const api_quiz_check = new URL("quizcheck", api_base);
 
+// API call functions
 const apiNewQuiz = async () => {
   const url = new URL(api_new_quiz);
   url.searchParams.set("t", Date.now());
@@ -50,11 +52,13 @@ const apiQuizCheck = async (quiz_id, ans_link) => {
   );
 };
 
+// refs
 const quiz_id = ref(null);
 const quiz_img = ref(null);
 const ans_link = ref("");
 const score = ref(0);
 
+// async status
 const AsyncStatus = Object.freeze({
   uninited: Symbol("uninited"),
   in_progress: Symbol("in_progress"),
@@ -62,6 +66,7 @@ const AsyncStatus = Object.freeze({
   error: Symbol("error"),
 });
 
+// init a new quiz
 const loading_status = ref(AsyncStatus.uninited);
 const newQuiz = async () => {
   loading_status.value = AsyncStatus.in_progress;
@@ -81,6 +86,7 @@ const newQuiz = async () => {
   loading_status.value = res ? AsyncStatus.done : AsyncStatus.error;
 };
 
+// check a quiz
 const checking_status = ref(AsyncStatus.uninited);
 const check = async () => {
   if (loading_status.value != AsyncStatus.done || quiz_id.value === null)
@@ -95,6 +101,7 @@ const check = async () => {
   }
 };
 
+// init
 onMounted(newQuiz);
 </script>
 
@@ -148,7 +155,6 @@ onMounted(newQuiz);
   width: 100%;
   height: 100%;
   overflow-y: scroll;
-  background-image: url(/src/assets/background/Fparrot_CPU2.png);
 }
 
 #container {
